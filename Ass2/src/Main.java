@@ -6,7 +6,7 @@ public class Main {
 
 
         Student student1 = new Student(22,"Ahmad");
-        Student student2 = new Student(21,"Ahmad");
+        Student student2 = new Student(22,"Loai");
 
         Course course = new Course();
 
@@ -14,7 +14,7 @@ public class Main {
         System.out.println(student1.getName() + " " + student1.getAge());
         System.out.println(student2.getName() + " " + student2.getAge());
 
-        if(student1.equals(course)){
+        if(student1.equals(student2)){
             System.out.println("They are same ");
         } else {
             System.out.println("The are not !");
