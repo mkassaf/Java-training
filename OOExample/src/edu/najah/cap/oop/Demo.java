@@ -1,5 +1,8 @@
 package edu.najah.cap.oop;
 
+import edu.najah.cap.oop.abstraction.DatasbeAbst;
+import edu.najah.cap.oop.abstraction.MySqlDB;
+
 public class Demo {
 
 
@@ -27,6 +30,9 @@ public class Demo {
         car = huCar;//it's ok
 
         System.out.println(huCar.getModel());
+
+
+
 
 
     }
