@@ -1,12 +1,11 @@
 package edu.najah.eng.cap.coffee.example;
 
+import edu.najah.eng.cap.constants.PriceList;
+
 public class CoffeeWithMilk extends Coffee {
-
-
-    private static final int COFFEE_WITH_MILK_COST = 1;
 
     @Override
     public int getCost(){
-        return super.getCost() + COFFEE_WITH_MILK_COST;
+        return super.getCost() + PriceList.COFFEE_WITH_MILK.price;
     }
 }
