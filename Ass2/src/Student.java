@@ -1,3 +1,4 @@
+import utils.EqualsBuilder;
 
 public class Student {
 
@@ -44,14 +45,7 @@ public class Student {
         }
         Student tmp = (Student)obj;//type casting
 
-        if(tmp.getAge() != this.age){
-            return false;
-        }
-        if (!this.name.equals(tmp.getName())){
-            return false;
-        }
-
-        return true;
+        return new EqualsBuilder().append(this.name, tmp.name).append(this.age, tmp.age).isEquals();
     }
 
 

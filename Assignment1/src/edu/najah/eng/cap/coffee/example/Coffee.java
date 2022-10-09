@@ -1,5 +1,7 @@
 package edu.najah.eng.cap.coffee.example;
 
+import edu.najah.eng.cap.constants.PriceList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,13 +17,12 @@ public class Coffee {
     public Coffee(){
         extra = new ArrayList<>();
     }
-    private static final int COFFEE_COST = 3;
 
     public int getCost(){
-        int total = 0;
+        int total = PriceList.COFFEE.price; // set it initially to the price of the coffee
         for (Extra extra1 : extra) {
             total = extra1.getCost();
         }
-        return COFFEE_COST + total;
+        return total;
     }
 }
